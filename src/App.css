@@ -1,3 +1,6 @@
 .App{
   width: 800px; margin: 100px auto; padding: 40px; border: 2px solid #ddd; border-radius: 10px;
 }
+input{
+  padding: 0 20px; width: 100%; line-height: 40px; font-size: 16px; border:1px solid #444; border-radius: 4px;
+}
