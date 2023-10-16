@@ -1,3 +1,4 @@
+import CoinTracker from "./example/CoinTracker";
 import ToDoList from "./example/TodoList";
 import StudyUseEffect from "./study/UseEffect"
 function App() {
@@ -7,7 +8,8 @@ function App() {
       { false ? <StudyUseEffect/> : null}
 
       {/* example */}
-      { true ? <ToDoList/> : null}
+      { false ? <ToDoList/> : null}
+      { true ? <CoinTracker/> : null}
     </div>
   );
 }
