@@ -35,14 +35,17 @@ function UseEffect() {
   }, [text])
   return (
     <div>
-      <h2>복습</h2><br/><br/>
-      <Input value={text} changeEvent={onChange}/>&nbsp;&nbsp;<span>실시간 변경:{text}</span>
-      <br/><br/><br/><hr/><br/>
+      <h1 className="title__page">state, props, useEffect</h1>
+      <h2 className="title__sub mt-10">실시간 문구 변경</h2>
+      <Input value={text} changeEvent={onChange}/>
+      <p className="pt-4">실시간 변경:{text}</p>
+      <hr className="my-6"/>
+      <h2 className="title__sub mt-10">counter 증가</h2>
       <p style={{fontSize:50}}>{count}</p>
       <Button text="counter" clickEvent={onCounter}/>
-      <br/><br/><br/><hr/><br/>
-      <h2>useEffect</h2><br/><br/>
-      {show ? <Create/> : null }
+      <hr className="my-6"/>
+      <h2 className="title__sub mt-10">useEffect 상황별 확인</h2>
+      <div className="my-6">{show ? <Create/> : null }</div>
       <Button text={show ? '삭제' : '생성'} clickEvent={onDestroy}/>
     </div>
   );

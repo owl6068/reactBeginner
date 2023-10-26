@@ -15,7 +15,7 @@ function ToDoList(){
   
   return(
     <div className="Todo__wrap">
-      <h1>Todo List ({list.length})</h1><br/>
+      <h1 className="title__page">Todo List ({list.length})</h1><br/>
       <form onSubmit={onSubmit}>
         <div style={{display:'flex',alignItems:'center'}}>
           <input value={toDo} type="text" onChange={addTodoList}/><button type="button" className={BtnStyle.btn} onClick={addTodoList}>확인</button>

@@ -25,7 +25,7 @@ function CoinTracker(){
   },[])
   return (
     <div>
-      <h1>Coin Tracker</h1><br/>
+      <h1 className="title__page">Coin Tracker</h1><br/>
       <form>
         <input value={moneys} type="nuber" onChange={onChange}/>
       </form>

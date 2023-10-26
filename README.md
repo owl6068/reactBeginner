@@ -11,3 +11,13 @@
 
 #### 2023-10-16
 - 코인 APi로 input에 작성한 금액만큼 구매 가능한 코인 갯수 계산
+
+
+<!-- <div className="App">
+{/* study */}
+{ false ? <StudyUseEffect/> : null}
+
+{/* example */}
+{ false ? <ToDoList/> : null}
+{ false ? <CoinTracker/> : null}
+</div> -->

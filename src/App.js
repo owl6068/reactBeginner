@@ -1,17 +1,12 @@
-import CoinTracker from "./example/CoinTracker";
-import ToDoList from "./example/TodoList";
-import StudyUseEffect from "./study/UseEffect"
+import Router from "./Router"
 function App() {
   return (
-    <div className="App">
-      {/* study */}
-      { false ? <StudyUseEffect/> : null}
-
-      {/* example */}
-      { false ? <ToDoList/> : null}
-      { true ? <CoinTracker/> : null}
+    <div className="contain__app">
+      <Router/>
     </div>
   );
 }
 
 export default App;
+
+
