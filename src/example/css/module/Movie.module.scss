@@ -1,0 +1,19 @@
+.box{
+  display: grid; grid-template-columns: repeat(4, 1fr); align-items: flex-start; flex-wrap: wrap; padding: 0; list-style: none; gap: 20px;
+  li{
+    height: 100%;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    img{
+      transition: all 0.2s;
+    }
+    &:hover{
+      border:2px solid red;
+      img{
+        transform: scale(1.03);
+      }
+    }
+  }
+}

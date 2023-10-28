@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './reset.css';
+import './reset.scss';
 import './common.scss';
 import App from './App';
 

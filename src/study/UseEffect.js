@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
-import Button from "./component/Button";
-import Input from "./component/Input";
+import { useState, useEffect } from 'react';
+import Button from './component/Button';
+import Input from './component/Input';
 
 function Create (){
   useEffect(()=>{
@@ -35,17 +35,17 @@ function UseEffect() {
   }, [text])
   return (
     <div>
-      <h1 className="title__page">state, props, useEffect</h1>
-      <h2 className="title__sub mt-10">실시간 문구 변경</h2>
+      <h1 className='title__page'>state, props, useEffect</h1>
+      <h2 className='title__sub mt-10'>실시간 문구 변경</h2>
       <Input value={text} changeEvent={onChange}/>
-      <p className="pt-4">실시간 변경:{text}</p>
-      <hr className="my-6"/>
-      <h2 className="title__sub mt-10">counter 증가</h2>
+      <p className='pt-4'>실시간 변경:{text}</p>
+      <hr className='my-6'/>
+      <h2 className='title__sub mt-10'>counter 증가</h2>
       <p style={{fontSize:50}}>{count}</p>
-      <Button text="counter" clickEvent={onCounter}/>
-      <hr className="my-6"/>
-      <h2 className="title__sub mt-10">useEffect 상황별 확인</h2>
-      <div className="my-6">{show ? <Create/> : null }</div>
+      <Button text='counter' clickEvent={onCounter}/>
+      <hr className='my-6'/>
+      <h2 className='title__sub mt-10'>useEffect 상황별 확인</h2>
+      <div className='my-6'>{show ? <Create/> : null }</div>
       <Button text={show ? '삭제' : '생성'} clickEvent={onDestroy}/>
     </div>
   );

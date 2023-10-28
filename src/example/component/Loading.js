@@ -1,6 +1,6 @@
 function Loading(){
   return (
-    <div className="loading"><img src="img/loading.svg" alt="loading..."/></div>
+    <div className='loading'><img src='img/loading.svg' alt='loading...'/></div>
   )
 }
 

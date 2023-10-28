@@ -1,0 +1,22 @@
+.movieDetail {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-start;
+  gap: 0 40px;
+
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 4px;
+    padding: 0 10px;
+    font-size: 12px;
+    color: #fff;
+    line-height: 24px;
+    background-color: #ee940d;
+  }
+
+  li {
+    max-height: 500px;
+    overflow: auto;
+  }
+}

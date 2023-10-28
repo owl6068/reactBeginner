@@ -1,10 +1,11 @@
-import { useState } from "react";
-import BtnStyle from './css/module/Button.module.css'
+import { useState } from 'react';
+import BtnStyle from './css/module/Button.module.scss'
 function ToDoList(){
   const [toDo, setTodo] = useState('')
   const [list, setList] = useState([]);
   const addTodoList = (event) =>  setTodo(event.target.value)
   const onSubmit = (event) => {
+    console.log('asdf')
     event.preventDefault()
     if(toDo === ''){
       return
@@ -14,11 +15,11 @@ function ToDoList(){
   }
   
   return(
-    <div className="Todo__wrap">
-      <h1 className="title__page">Todo List ({list.length})</h1><br/>
+    <div className='Todo__wrap'>
+      <h1>Todo List ({list.length})</h1><br/>
       <form onSubmit={onSubmit}>
         <div style={{display:'flex',alignItems:'center'}}>
-          <input value={toDo} type="text" onChange={addTodoList}/><button type="button" className={BtnStyle.btn} onClick={addTodoList}>확인</button>
+          <input value={toDo} type='text' onChange={addTodoList}/><button className={BtnStyle.btn}>확인</button>
         </div>
       </form>
       <ul>

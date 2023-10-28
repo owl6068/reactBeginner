@@ -3,9 +3,9 @@ $font-size-text : 'sl' 24,
 'sm' 16,
 'ss' 14;
 
-$btn-style : "link" #eee #e98f1a,
-"confirm" #fff #0a97e9,
-"cancle" #eee #ddd;
+$btn-style : "light" #eee #e98f1a,
+"primary" #fff #0a97e9,
+"secondary" #eee #ccc;
 
 // **** input
 select,
@@ -93,7 +93,7 @@ input {
 // **** 공통 모듈
 .contain {
   &__app {
-    width: 800px;
+    max-width: 1000px;
     margin: 100px auto;
     padding: 40px;
     border: 2px solid #ddd;
@@ -111,6 +111,10 @@ input {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, .5);
+
+  img {
+    width: 100px;
+  }
 }
 
 .title {
@@ -125,7 +129,14 @@ input {
     padding: 0 10px;
     font-size: ($font-size-big - 10);
     border-left: 5px solid #1ecc6c;
+
+    &.sm {
+      font-size: ($font-size-big - 16);
+      border-left: 3px solid #1ecc6c;
+    }
   }
+
+
 }
 
 .btn {
@@ -134,7 +145,7 @@ input {
       display: inline-block;
       min-width: 100px;
       padding: 0 20px;
-      line-height: 40px;
+      line-height: 38px;
       font-weight: bold;
       color: $color;
       text-align: center;
@@ -144,7 +155,7 @@ input {
     }
   }
 
-  &__link {
+  &__light {
     &::after {
       content: "▶";
       padding-left: 8px;
