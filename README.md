@@ -1,6 +1,6 @@
 # Create React App
 
-## create-react-app 
+## react-beginner1
 
 #### 2023-10-15
 - create-react-app 설치 및 기본 셋팅
